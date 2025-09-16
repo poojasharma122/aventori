@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header start here -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-content ">
+                        <div class="logo">
+                            <a href="./"><img src="images/logo.png" alt="logo"></a>
+                        </div>
+                        <div class="menu-list" id="mySidenavs">
+                            <span class="menu-close" onclick="closeNav()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <ul>
+                                <li><a href="./">Home</a></li>
+                                <li><a href="guide">Guide</a></li>
+                                <li><a href="cards">Cards</a></li>
+                                <li class="active"><a href="faqs">FAQs</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="menu-icon">
+                            <span onclick="openNav()">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menuOverlay" onclick="closeNav()"></div>
+    </header>
+    <!-- header end here -->
+
+
+
+    <main class="main-content">
+        <section class="inner-bnr" style="background: url(images/privacy-bnr.jpg);">
+            <div class="container">
+                <div class="inner-content">
+                    <h2>Contact Us </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+
+                <div class="contact-form-inner">
+                    <form id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-clt">
+                                    <input type="text" name="firstName" id="firstName" placeholder="First Name *">
+                                    <div class="error-message" id="firstNameError">Please enter your first name</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-clt">
+                                    <input type="text" name="lastName" id="lastName" placeholder="Last Name *">
+                                    <div class="error-message" id="lastNameError">Please enter your last name</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-clt">
+                                    <input type="email" name="email" id="email" placeholder="Your Email *">
+                                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-clt">
+                                    <textarea name="message" id="message" placeholder="Type your message *"></textarea>
+                                    <div class="error-message" id="messageError">Please enter your message</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <button type="submit" class="gt-theme-btn button-cst">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="logo">
+                            <p>Fast-payouts lists our recommendations of the best credit cards. We may not include all
+                                credit cards that are available. What's best for you may vary depending on your needs.
+                                Credit cards offer short term credit at a high interest rate, if you are unsure
+                                regarding the needs for a credit card then please seek professional advice from a
+                                financial advisor. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-links">
+                            <h3>Links</h3>
+                            <ul>
+                                <li><a href="contact-us">Contact us</a></li>
+                                <li><a href="terms-&-conditions">Terms & conditions </a></li>
+                                <li><a href="privacy-policy">Privacy Policy </a></li>
+                                <li><a href="disclaimer">Disclaimer </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="social-links">
+                            <h3>Social Links</h3>
+                            <ul class="d-flex gap-3">
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p>Copyright © 2025 <a href="./">Aventori.co.com</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
