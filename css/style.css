@@ -307,47 +307,152 @@ span.menu-close {
     margin-bottom: 0px;
 }
 
+/* How Credit Cards Work Section - Clean Design */
 .how-credit-cards-work {
     padding: 40px 0;
-    background-color: #f8f8f8;
+    background: white;
 }
 
-.how-credit-cards-work-item {
-
-    padding: 30px;
-    height: 100%;
-    text-align: center;
-    border-radius: 10px;
+.how-credit-cards-work-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #004d4d;
+    margin-bottom: 20px;
 }
 
-.how-credit-cards-work-items-wrap {
-    padding-top: 40px;
+.how-credit-cards-work-header h2 span {
+    color: #ffce32;
 }
 
 .how-credit-cards-work-header p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    font-size: 0.95rem;
+    color: #000;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.how-credit-cards-work-item-icon {
-    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    background: #005655;
+.how-credit-cards-work-items-wrap {
+    padding-top: 0;
+}
+
+.work-card {
+    background: white;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.work-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-color: #ffce32;
+}
+
+.work-card:hover .work-card-icon {
+    transform: scale(1.1);
+    background: #004d4d;
+}
+
+.work-card:hover .work-card-icon i {
+    color: white;
+}
+
+.work-card:hover .work-card-number {
+    background: #004d4d;
+    color: white;
+    transform: scale(1.1);
+}
+
+.work-card:hover .work-card-content h3 {
+    color: #ffce32;
+}
+
+.work-card-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #ffce32;
+    color: #000;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
-    border-radius: 50%;
-    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
 }
 
-.how-credit-cards-work-item-icon-wrap {
-    position: relative;
+.work-card-icon {
+    width: 80px;
+    height: 80px;
+    background: #ffce32;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.3s ease;
+}
+
+.work-card-icon i {
+    color: #000;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.work-card-content h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #004d4d;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.work-card-content p {
+    font-size: 0.95rem;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .how-credit-cards-work {
+        padding: 60px 0;
+    }
+    
+    .how-credit-cards-work-header h2 {
+        font-size: 2rem;
+    }
+    
+    .work-card {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .work-card-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .work-card-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .work-card-content h3 {
+        font-size: 1.1rem;
+    }
 }
 
 .credit-bonuses {
