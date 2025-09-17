@@ -756,7 +756,7 @@ footer h3 {
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
-    background: #005655;
+    background: #ffce32;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-size: 28px;
@@ -767,20 +767,70 @@ footer h3 {
     transform: translateX(-50%);
 }
 
-.guide-wrap {
-    padding: 60px 0 40px 0;
-    background-color: #f8f8f8;
+.credit-guide {
+    background-color: #004d4d;
+    color: #fff;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
 }
 
-.guide-wrap-content {
-    background: #fff;
-    padding: 50px 20px 20px;
-    height: 100%;
+.guide-intro {
     text-align: center;
-    position: relative;
-    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto 50px;
 }
 
-.guide-wrap .row .col-lg-4.col-md-6:not(:last-child) {
-    margin-bottom: 60px;
+.guide-intro img.guide-image {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.guide-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.guide-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.guide-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #004d4d;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
