@@ -670,6 +670,7 @@ footer h3 {
     font-size: 16px;
     line-height: 28px;
     margin: 0;
+    text-align: center;
 }
 
 .cards-list {
@@ -755,7 +756,7 @@ footer h3 {
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
-    background: #ffce32;
+    background: #005655;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-size: 28px;
@@ -768,7 +769,7 @@ footer h3 {
 
 .guide-wrap {
     padding: 60px 0 40px 0;
-    background-color: #005655;
+    background-color: #f8f8f8;
 }
 
 .guide-wrap-content {
