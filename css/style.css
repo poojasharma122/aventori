@@ -143,9 +143,210 @@ span.menu-close {
     visibility: visible;
 }
 
-.logo img {
+/* Creative Aventori Logo with Credit Card Icon */
+.aventori-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo-icon {
+    position: relative;
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(135deg, #005655 0%, #006666 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 86, 85, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.logo-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.logo-icon i {
+    color: #fff;
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.logo-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
     width: 100%;
-    max-width: 200px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.8s ease;
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: #005655;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    transition: all 0.3s ease;
+}
+
+.logo-tagline {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffce32;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Logo hover effects */
+.aventori-logo:hover {
+    transform: translateY(-2px);
+}
+
+.aventori-logo:hover .logo-icon {
+    transform: rotate(5deg) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 86, 85, 0.4);
+}
+
+.aventori-logo:hover .logo-icon::before {
+    transform: translateX(100%);
+}
+
+.aventori-logo:hover .logo-shine {
+    left: 100%;
+}
+
+.aventori-logo:hover .logo-icon i {
+    transform: scale(1.1);
+}
+
+.aventori-logo:hover .logo-text {
+    color: #ffce32;
+}
+
+.aventori-logo:hover .logo-tagline {
+    color: #005655;
+}
+
+/* Footer logo styling */
+.footer-logo .aventori-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo .logo-icon {
+    background: linear-gradient(135deg, #ffce32 0%, #fbbf24 100%);
+    box-shadow: 0 4px 15px rgba(255, 206, 50, 0.3);
+}
+
+.footer-logo .logo-icon i {
+    color: #005655;
+}
+
+.footer-logo .logo-text {
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer-logo .logo-tagline {
+    color: #ffce32;
+    font-size: 10px;
+}
+
+.footer-logo .aventori-logo:hover .logo-icon {
+    background: linear-gradient(135deg, #005655 0%, #006666 100%);
+    box-shadow: 0 8px 25px rgba(0, 86, 85, 0.4);
+}
+
+.footer-logo .aventori-logo:hover .logo-icon i {
+    color: #fff;
+}
+
+.footer-logo .aventori-logo:hover .logo-text {
+    color: #ffce32;
+}
+
+.footer-logo .aventori-logo:hover .logo-tagline {
+    color: #fff;
+}
+
+/* Responsive logo */
+@media (max-width: 768px) {
+    .aventori-logo {
+        gap: 12px;
+    }
+    
+    .logo-icon {
+        width: 45px;
+        height: 32px;
+    }
+    
+    .logo-icon i {
+        font-size: 18px;
+    }
+    
+    .logo-text {
+        font-size: 24px;
+    }
+    
+    .logo-tagline {
+        font-size: 10px;
+    }
+    
+    .footer-logo .logo-text {
+        font-size: 20px;
+    }
+    
+    .footer-logo .logo-tagline {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aventori-logo {
+        gap: 10px;
+    }
+    
+    .logo-icon {
+        width: 40px;
+        height: 28px;
+    }
+    
+    .logo-icon i {
+        font-size: 16px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .logo-tagline {
+        font-size: 9px;
+    }
 }
 
 /* header end here   */
@@ -222,6 +423,12 @@ span.menu-close {
     position: relative;
 }
 
+@keyframes cir90 {
+    50% {
+        transform: rotate(90deg);
+    }
+}
+
 .hero-banner__thumb-img-1 {
     position: absolute;
     top: 0;
@@ -238,19 +445,11 @@ span.menu-close {
 }
 
 
-@keyframes cir90 {
-    50% {
-        transform: rotate(90deg);
-    }
-}
 
+/* Modern 2025 Provider Section */
 .provider {
     padding: 40px 0;
     background-color: #f8f8f8;
-}
-
-.provider-inner table {
-    width: 100%;
 }
 
 .provider-inner {
@@ -258,27 +457,148 @@ span.menu-close {
     z-index: 11;
     position: relative;
     background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 86, 85, 0.1);
+    overflow: hidden;
 }
 
-.provider-inner table th {
-    background: #fff;
-    color: #121212;
-    font-size: 20px;
+/* Modern Table Design */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.modern-table thead {
+    background: linear-gradient(135deg, #005655 0%, #006666 100%);
+}
+
+.modern-table thead th {
+    color: #fff;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    padding: 15px 20px;
+    padding: 20px 15px;
+    text-align: left;
+    border: none;
+    position: relative;
 }
 
-.provider-inner table td a {
-    background: #005655;
-    padding: 10px;
+.modern-table thead th:first-child {
+    border-top-left-radius: 20px;
+}
+
+.modern-table thead th:last-child {
+    border-top-right-radius: 20px;
+}
+
+.modern-table tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.modern-table tbody tr:hover {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    transform: scale(1.01);
+    box-shadow: 0 4px 20px rgba(0, 86, 85, 0.08);
+}
+
+.modern-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.modern-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+.modern-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+.modern-table td {
+    padding: 20px 15px;
+    color: #333;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Provider Cell Styling */
+.provider-cell {
+    min-width: 200px;
+}
+
+.provider-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.provider-logo {
+    width: 50px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.provider-logo:hover {
+    transform: scale(1.05);
+}
+
+.provider-name {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 16px;
+}
+
+/* Rating Cell Styling */
+.rating-cell {
+    text-align: center;
+    min-width: 120px;
+}
+
+.rating-number {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #005655;
+    margin-bottom: 5px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.stars i {
+    color: #ffce32;
+    font-size: 14px;
+}
+
+/* Modern Button Styling */
+.btn-custom {
+    background: linear-gradient(135deg, #005655 0%, #006666 100%);
+    padding: 12px 24px;
     color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-
+    border: none;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
 }
 
-.provider-inner table td a::before {
+.btn-custom::before {
     content: '';
     position: absolute;
     top: 0;
@@ -289,30 +609,62 @@ span.menu-close {
     transition: left 0.5s ease;
 }
 
-.provider-inner table td a:hover {
-    color: #000;
-    background-color: #ffce32;
-}
-
-.provider-inner table td a:hover::before {
+.btn-custom:hover::before {
     left: 100%;
 }
 
-
-.provider-inner table td {
-    padding: 18px 20px;
-    color: #333;
-    vertical-align: middle;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-bottom: 0px;
+.btn-custom:hover {
+    background: linear-gradient(135deg, #ffce32 0%, #fbbf24 100%);
+    color: #1e293b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 206, 50, 0.3);
 }
 
-.provider-inner table tr:hover {
-    background: #f1f5f9;
-    transform: scale(1.01);
-    transition: all 0.3s ease-in-out;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .provider-inner {
+        margin-top: -40px;
+        border-radius: 15px;
+    }
+    
+    .modern-table {
+        font-size: 14px;
+    }
+    
+    .modern-table thead th {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+    
+    .modern-table td {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    
+    .provider-info {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .provider-logo {
+        width: 40px;
+        height: 25px;
+    }
+    
+    .provider-name {
+        font-size: 14px;
+    }
+    
+    .rating-number {
+        font-size: 18px;
+    }
+    
+    .btn-custom {
+        padding: 10px 20px;
+        font-size: 13px;
+        min-width: 80px;
+    }
 }
 
 .what-we-do {
@@ -487,100 +839,10 @@ span.menu-close {
     }
 }
 
-/* Smooth Banner Animations - Inspired by Babuz */
-.animate-fade-in-up {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s ease-out 0.3s forwards;
-}
 
-.animate-fade-in-up-delay {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s ease-out 0.6s forwards;
-}
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Hero Section Animation Enhancements */
-.hero-title {
-    animation-delay: 0.3s;
-}
-
-.hero-description {
-    animation-delay: 0.6s;
-}
-
-/* Additional smooth animations for other elements */
-.hero-banner__thumb {
-    opacity: 0;
-    transform: translateX(30px);
-    animation: slideInRight 1s ease-out 0.9s forwards;
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Staggered animation for floating elements */
-.wallet {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: floatIn 1s ease-out 1.2s forwards;
-}
-
-.hand-wallet {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: floatIn 1s ease-out 1.4s forwards;
-}
-
-.mobile-wallet {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: floatIn 1s ease-out 1.6s forwards;
-}
-
-@keyframes floatIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Smooth hover effects for hero elements */
-.hero-title:hover {
-    transform: translateY(-2px);
-    transition: transform 0.3s ease;
-}
-
-.hero-description:hover {
-    transform: translateY(-2px);
-    transition: transform 0.3s ease;
-}
 
 .credit-bonuses {
     padding: 40px;
