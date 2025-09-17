@@ -299,28 +299,28 @@ span.menu-close {
     .aventori-logo {
         gap: 12px;
     }
-    
+
     .logo-icon {
         width: 45px;
         height: 32px;
     }
-    
+
     .logo-icon i {
         font-size: 18px;
     }
-    
+
     .logo-text {
         font-size: 24px;
     }
-    
+
     .logo-tagline {
         font-size: 10px;
     }
-    
+
     .footer-logo .logo-text {
         font-size: 20px;
     }
-    
+
     .footer-logo .logo-tagline {
         font-size: 9px;
     }
@@ -330,20 +330,20 @@ span.menu-close {
     .aventori-logo {
         gap: 10px;
     }
-    
+
     .logo-icon {
         width: 40px;
         height: 28px;
     }
-    
+
     .logo-icon i {
         font-size: 16px;
     }
-    
+
     .logo-text {
         font-size: 20px;
     }
-    
+
     .logo-tagline {
         font-size: 9px;
     }
@@ -626,40 +626,40 @@ span.menu-close {
         margin-top: -40px;
         border-radius: 15px;
     }
-    
+
     .modern-table {
         font-size: 14px;
     }
-    
+
     .modern-table thead th {
         font-size: 16px;
         padding: 15px 10px;
     }
-    
+
     .modern-table td {
         padding: 15px 10px;
         font-size: 14px;
     }
-    
+
     .provider-info {
         flex-direction: column;
         gap: 8px;
         text-align: center;
     }
-    
+
     .provider-logo {
         width: 40px;
         height: 25px;
     }
-    
+
     .provider-name {
         font-size: 14px;
     }
-    
+
     .rating-number {
         font-size: 18px;
     }
-    
+
     .btn-custom {
         padding: 10px 20px;
         font-size: 13px;
@@ -1551,61 +1551,33 @@ footer h3 {
     border: 1px solid #e9ecef;
 }
 
-.quick-pick-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #ffce32, #ffd700);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
 
-.quick-pick-card:hover::before {
-    transform: scaleX(1);
-}
 
 .quick-pick-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
-.card-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, #004d4d, #006666);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 25px;
-    transition: transform 0.3s ease;
-}
+/* Card icon styles removed - now text-only cards */
 
-.quick-pick-card:hover .card-icon {
-    transform: scale(1.1);
-}
-
-.card-icon i {
-    color: white;
-    font-size: 2rem;
+.card-content {
+    text-align: center;
+    padding: 20px 0;
 }
 
 .card-content h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #000;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .card-content h4 {
     color: #004d4d;
-    margin-bottom: 25px;
-    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -1685,4 +1657,8 @@ footer h3 {
     .card-content h4 {
         font-size: 1.2rem;
     }
+}
+
+.card-image-wrap img {
+    width: 100%;
 }
