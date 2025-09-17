@@ -469,6 +469,18 @@ span.menu-close {
     font-size: 16px;
 }
 
+.provider-inner {
+    width: 100%;
+    overflow-x: auto;
+
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1200px;
+}
+
 .modern-table thead {
     background: linear-gradient(135deg, #005655 0%, #006666 100%);
 }
@@ -499,7 +511,7 @@ span.menu-close {
 
 .modern-table tbody tr:hover {
     background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    transform: scale(1.01);
+
     box-shadow: 0 4px 20px rgba(0, 86, 85, 0.08);
 }
 
@@ -1661,4 +1673,8 @@ footer h3 {
 
 .card-image-wrap img {
     width: 100%;
+}
+
+.social-links ul {
+    flex-wrap: wrap;
 }
