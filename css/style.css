@@ -792,7 +792,7 @@ footer h3 {
 }
 
 .guide-intro p {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     color: #e0e0e0;
 }
@@ -874,7 +874,7 @@ footer h3 {
 }
 
 .pick-card h3 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: #000;
     margin-bottom: 8px;
@@ -887,4 +887,277 @@ footer h3 {
     font-weight: 600;
     color: #004d4d;
     margin-bottom: 0;
+}
+
+/* Credit Card Warnings Section */
+.credit-warnings {
+    padding: 80px 0;
+    background: white;
+}
+
+.credit-warnings-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #004d4d;
+    margin-bottom: 15px;
+}
+
+.credit-warnings-header h2 span {
+    color: #ffce32;
+}
+
+.credit-warnings-header p {
+    font-size: 0.95rem;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.credit-warnings-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.warning-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    border-left: 4px solid #ffce32;
+}
+
+.warning-item:hover {
+    transform: translateY(-3px);
+}
+
+.warning-icon {
+    width: 60px;
+    height: 60px;
+    background: #ffce32;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.warning-icon i {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.warning-text h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #004d4d;
+    margin-bottom: 5px;
+}
+
+.warning-text p {
+    font-size: 0.95rem;
+    color: #000;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .credit-warnings {
+        padding: 60px 0;
+    }
+    
+    .credit-warnings-header h2 {
+        font-size: 2rem;
+    }
+    
+    .warning-item {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .warning-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .warning-text h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Best Cards Quick Picks Section */
+.quick-picks {
+    padding: 40px 0;
+    background: #004d4d;
+}
+
+.quick-picks-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.quick-picks-header h2 span {
+    color: #ffce32;
+}
+
+.quick-picks-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quick-pick-card {
+    background: white;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
+
+.quick-pick-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffce32, #ffd700);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.quick-pick-card:hover::before {
+    transform: scaleX(1);
+}
+
+.quick-pick-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #004d4d, #006666);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: transform 0.3s ease;
+}
+
+.quick-pick-card:hover .card-icon {
+    transform: scale(1.1);
+}
+
+.card-icon i {
+    color: white;
+    font-size: 2rem;
+}
+
+.card-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-content h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #004d4d;
+    margin-bottom: 25px;
+}
+
+.btn-quick-pick {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #004d4d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 2px solid #004d4d;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-quick-pick::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-quick-pick:hover::before {
+    left: 100%;
+}
+
+.btn-quick-pick:hover {
+    background: #ffce32;
+    color: #000;
+    border-color: #ffce32;
+    transform: translateY(-2px);
+}
+
+.btn-quick-pick i {
+    margin-left: 8px;
+    font-size: 0.95rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-quick-pick:hover i {
+    transform: translateX(3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quick-picks {
+        padding: 60px 0;
+    }
+    
+    .quick-picks-header h2 {
+        font-size: 2rem;
+    }
+    
+    .quick-pick-card {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .card-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .card-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .card-content h4 {
+        font-size: 1.2rem;
+    }
 }
