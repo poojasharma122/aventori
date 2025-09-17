@@ -294,60 +294,7 @@ span.menu-close {
     color: #fff;
 }
 
-/* Responsive logo */
-@media (max-width: 768px) {
-    .aventori-logo {
-        gap: 12px;
-    }
 
-    .logo-icon {
-        width: 45px;
-        height: 32px;
-    }
-
-    .logo-icon i {
-        font-size: 18px;
-    }
-
-    .logo-text {
-        font-size: 24px;
-    }
-
-    .logo-tagline {
-        font-size: 10px;
-    }
-
-    .footer-logo .logo-text {
-        font-size: 20px;
-    }
-
-    .footer-logo .logo-tagline {
-        font-size: 9px;
-    }
-}
-
-@media (max-width: 480px) {
-    .aventori-logo {
-        gap: 10px;
-    }
-
-    .logo-icon {
-        width: 40px;
-        height: 28px;
-    }
-
-    .logo-icon i {
-        font-size: 16px;
-    }
-
-    .logo-text {
-        font-size: 20px;
-    }
-
-    .logo-tagline {
-        font-size: 9px;
-    }
-}
 
 /* header end here   */
 
@@ -632,52 +579,7 @@ span.menu-close {
     box-shadow: 0 8px 25px rgba(255, 206, 50, 0.3);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .provider-inner {
-        margin-top: -40px;
-        border-radius: 15px;
-    }
 
-    .modern-table {
-        font-size: 14px;
-    }
-
-    .modern-table thead th {
-        font-size: 16px;
-        padding: 15px 10px;
-    }
-
-    .modern-table td {
-        padding: 15px 10px;
-        font-size: 14px;
-    }
-
-    .provider-info {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
-    }
-
-    .provider-logo {
-        width: 40px;
-        height: 25px;
-    }
-
-    .provider-name {
-        font-size: 14px;
-    }
-
-    .rating-number {
-        font-size: 18px;
-    }
-
-    .btn-custom {
-        padding: 10px 20px;
-        font-size: 13px;
-        min-width: 80px;
-    }
-}
 
 .what-we-do {
     background: #005655;
@@ -820,37 +722,6 @@ span.menu-close {
     line-height: 1.6;
     margin-bottom: 0;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .how-credit-cards-work {
-        padding: 60px 0;
-    }
-
-    .how-credit-cards-work-header h2 {
-        font-size: 2rem;
-    }
-
-    .work-card {
-        padding: 30px 20px;
-        margin-bottom: 20px;
-    }
-
-    .work-card-icon {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 20px;
-    }
-
-    .work-card-icon i {
-        font-size: 1.5rem;
-    }
-
-    .work-card-content h3 {
-        font-size: 1.1rem;
-    }
-}
-
 
 
 
@@ -1502,31 +1373,6 @@ footer h3 {
     line-height: 1.4;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .credit-warnings {
-        padding: 60px 0;
-    }
-
-    .credit-warnings-header h2 {
-        font-size: 2rem;
-    }
-
-    .warning-item {
-        padding: 20px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .warning-icon {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .warning-text h4 {
-        font-size: 1.1rem;
-    }
-}
 
 /* Best Cards Quick Picks Section */
 .quick-picks {
@@ -1641,35 +1487,7 @@ footer h3 {
     transform: translateX(3px);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .quick-picks {
-        padding: 60px 0;
-    }
 
-    .quick-picks-header h2 {
-        font-size: 2rem;
-    }
-
-    .quick-pick-card {
-        padding: 30px 20px;
-        margin-bottom: 20px;
-    }
-
-    .card-icon {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 20px;
-    }
-
-    .card-icon i {
-        font-size: 1.5rem;
-    }
-
-    .card-content h4 {
-        font-size: 1.2rem;
-    }
-}
 
 .card-image-wrap img {
     width: 100%;
