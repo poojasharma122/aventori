@@ -2061,3 +2061,15 @@ footer h3 {
     width: 100% !important;
     max-width: 90px;
 }
+
+.top-list-heading {
+    text-align: center;
+  
+}
+
+.top-list-heading h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #004d4d;
+    margin-bottom: 20px;
+}
