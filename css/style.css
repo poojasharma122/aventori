@@ -1261,7 +1261,8 @@ footer h3 {
     color: #2ecc71;
     left: 0;
     position: absolute;
-    top: 4px;
+    top: 6px;
+    display: block;
 }
 
 .cards-list-inr ul li i.fa-solid.fa-x {
