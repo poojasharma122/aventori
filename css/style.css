@@ -902,7 +902,7 @@ span.menu-close {
 
 .last-update {
     padding: 40px 0;
-    background-color: #f8f8f8;
+    background-color: #004d4d;
 }
 
 .last-update-inner {
@@ -919,22 +919,31 @@ span.menu-close {
 }
 
 .last-update-content p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 28px;
     color: #000;
     margin-bottom: 0;
 }
 
+.last-update-content p a {
+    color: #005655;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #fbbf24;
+}
+
 .last-update-content h4 {
     color: #000;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: .5rem;
 }
 
 .last-update-content ul li {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 28px;
     color: #000;
