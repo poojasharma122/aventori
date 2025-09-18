@@ -1103,6 +1103,7 @@ textarea#message {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    border-radius: 12px;
 }
 
 .button-cst:hover {
@@ -1626,7 +1627,7 @@ footer h3 {
     background: #004d4d;
     color: white;
     padding: 10px;
-
+    border-radius: 12px;
     text-decoration: none;
     font-size: 0.95rem;
     transition: all 0.3s ease;
@@ -2035,6 +2036,7 @@ footer h3 {
 .rbc-logo {
     background-color: #0050a5;
 }
+
 .footer-logo a {
     display: inline-block;
 }
