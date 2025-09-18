@@ -2,12 +2,39 @@
     .inner-bnr {
         height: 350px;
     }
+
+    .hero-content h1 {
+        font-size: 50px;
+        line-height: 60px;
+
+    }
+
+    .hero-sec-main {
+        padding: 40px 0;
+    }
+
 }
 
 
+@media (max-width: 991px) {
+    .wallet {
+        display: none;
+    }
 
+    .hand-wallet {
+        display: none;
+    }
 
-@media (max-width: 991px) {}
+    .hero-banner__thumb-img {
+        max-width: 400px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .mobile-wallet {
+        display: none;
+    }
+}
 
 
 /* Responsive adjustments */
@@ -161,6 +188,33 @@
     .warning-text h4 {
         font-size: 1.1rem;
     }
+
+    .quick-picks {
+        padding: 60px 0;
+    }
+
+    .quick-picks-header h2 {
+        font-size: 2rem;
+    }
+
+    .quick-pick-card {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .card-icon i {
+        font-size: 1.5rem;
+    }
+
+    .card-content h4 {
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -173,7 +227,7 @@
         left: 0;
         overscroll-behavior-y: contain;
         scrollbar-width: none;
-        background: #fff none repeat scroll 0 0;
+        background: #005655 none repeat scroll 0 0;
 
         transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
         height: 100vh;
@@ -200,7 +254,11 @@
     .menu-icon span {
         font-size: 26px;
         font-weight: 400;
-        color: #fff;
+        color: #005655;
+    }
+
+    .menu-icon span i {
+        color: #005655;
     }
 
     .right-col {
@@ -218,8 +276,8 @@
         text-align: center;
         box-shadow: 0 0 25px rgb(0 0 0 / .1);
         line-height: 32px;
-        background: #FF0808;
-        color: #fff;
+        background: #ffce32;
+        color: #000;
         position: absolute;
         right: 7px;
         top: 5px;
@@ -236,8 +294,24 @@
     }
 
     .menu-list ul li a {
-        color: #000;
+        color: #fff;
         font-size: 18px;
+    }
+
+    .menu-list ul li a:hover {
+        color: #ffce32;
+    }
+
+    .menu-list ul li.active>a {
+        color: #ffce32;
+    }
+
+    .menu-list ul li a::after {
+        background-color: #ffce32;
+    }
+
+    .menu-list ul li a:hover::after {
+        background-color: #ffce32;
     }
 
 }
