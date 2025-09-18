@@ -979,7 +979,7 @@ p a:hover {
     background-color: #005655;
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 11px;
     border-radius: 50%;
 }
 
@@ -1290,7 +1290,7 @@ footer h3 {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 14px 10px;
     border-radius: 10px;
     margin-top: 10px;
 }
