@@ -340,6 +340,10 @@
     .hero-banner__thumb-img {
         max-width: 240px;
     }
+    .hero-content p{
+        font-size: 14px !important;
+        line-height: 24px !important;
+    }
 }
 
 
