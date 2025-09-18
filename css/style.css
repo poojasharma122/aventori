@@ -62,7 +62,8 @@ header.is-sticky {
 }
 
 .logo img {
-    max-width: 150px;
+    max-width: 200px;
+
 }
 
 @keyframes slideDown {
