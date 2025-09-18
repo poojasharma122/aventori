@@ -314,6 +314,9 @@
         background-color: #ffce32;
     }
 
+    .top-picks-section .row .col-lg-4.col-md-6:not(:last-child) {
+        margin-bottom: 66px !important;
+    }
 }
 
 

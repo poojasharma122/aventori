@@ -499,7 +499,6 @@ span.menu-close {
 
 .modern-table tbody tr:hover {
     background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    transform: scale(1.01);
     box-shadow: 0 4px 20px rgba(0, 86, 85, 0.08);
 }
 
@@ -1208,7 +1207,9 @@ footer h3 {
     border-radius: 10px 10px 10px 10px;
     height: 100%;
     margin-bottom: 30px;
+
 }
+
 
 .cards-list-inner h4 {
     color: #fff;
@@ -1358,7 +1359,7 @@ footer h3 {
 
 /* Our Top Canadian Picks Section */
 .top-picks-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: white;
 }
 
@@ -1661,15 +1662,19 @@ table.modern-table {
     width: 100%;
     border-collapse: collapse;
     min-width: 1200px;
-   
+
 }
 
 .provider-inner {
     width: 100%;
     overflow-x: auto;
- 
+
 }
+
 .what-we-do-image img {
     width: 100%;
 }
 
+.social-links ul {
+    flex-wrap: wrap;
+}
