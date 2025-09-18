@@ -418,6 +418,7 @@ span.menu-close {
     max-width: 400px;
     padding-top: 100px;
     padding-left: 50px;
+    margin: 0 auto;
 }
 
 
@@ -719,7 +720,7 @@ span.menu-close {
 .how-credit-cards-work-header p {
     font-size: 0.95rem;
     color: #000;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -740,6 +741,9 @@ span.menu-close {
     transition: all 0.3s ease;
     margin-bottom: 20px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .work-card:hover {
@@ -1452,7 +1456,7 @@ footer h3 {
 .credit-warnings-header p {
     font-size: 0.95rem;
     color: #000;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .credit-warnings-content {
@@ -1467,13 +1471,14 @@ footer h3 {
     padding: 25px;
     border-radius: 12px;
     border: 1px solid #000;
-    margin-bottom: 20px;
+
     transition: transform 0.3s ease;
     border-left: 4px solid #ffce32;
     height: 100%;
 }
 
-.credit-warnings-content .row .col-lg-6 {
+.credit-warnings-content .row .col-lg-6:first-child,
+.credit-warnings-content .row .col-lg-6:nth-child(2) {
     margin-bottom: 30px;
 }
 
@@ -1668,9 +1673,13 @@ footer h3 {
 }
 
 
+.what-we-do-image {
+    text-align: center;
+}
 
 .what-we-do-image img {
     width: 100%;
+    max-width: 380px;
 }
 
 .social-links ul {
@@ -2038,4 +2047,11 @@ footer h3 {
 
 .footer-logo a {
     display: inline-block;
+}
+
+.hand-wallet img,
+.wallet img,
+.mobile-wallet img {
+    width: 100% !important;
+    max-width: 90px;
 }
