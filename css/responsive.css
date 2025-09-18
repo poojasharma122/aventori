@@ -323,6 +323,23 @@
     .top-picks-section .row .col-lg-4.col-md-6:not(:last-child) {
         margin-bottom: 66px !important;
     }
+
+    .hero-content h1 {
+        font-size: 28px;
+        line-height: 40px;
+
+    }
+
+    p,
+    li {
+        font-size: 16px !important;
+        line-height: 28px !important;
+
+    }
+
+    .hero-banner__thumb-img {
+        max-width: 240px;
+    }
 }
 
 
