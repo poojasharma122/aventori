@@ -28,6 +28,9 @@ ul {
     padding: 0;
 }
 
+.main-content {
+    overflow: hidden;
+}
 
 /* header start here */
 header {
