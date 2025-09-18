@@ -2034,3 +2034,6 @@ footer h3 {
 .rbc-logo {
     background-color: #0050a5;
 }
+.footer-logo a {
+    display: inline-block;
+}
