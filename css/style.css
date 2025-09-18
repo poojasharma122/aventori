@@ -971,6 +971,13 @@ p a:hover {
     padding-left: 20px;
 }
 
+.last-update-content ul li ul li {
+    padding-left: 40px;
+}
+
+.last-update-content ul li ul li::before {
+    left: 20px;
+}
 
 .last-update-content ul li:not(:last-child) {
     padding-bottom: 10px;
