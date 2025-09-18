@@ -61,6 +61,9 @@ header.is-sticky {
     background: #fff;
 }
 
+.logo img {
+    max-width: 150px;
+}
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -655,10 +658,7 @@ span.menu-close {
         text-align: center;
     }
 
-    .provider-logo {
-        width: 40px;
-        height: 25px;
-    }
+   
 
     .provider-name {
         font-size: 14px;
