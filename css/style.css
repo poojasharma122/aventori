@@ -1281,6 +1281,7 @@ footer h3 {
     line-height: 28px;
     margin: 0;
     font-style: italic;
+    padding-left: 0 !important;
 }
 
 .guide-wrap-content-img {
