@@ -3,6 +3,19 @@
         height: 350px;
     }
 
+    table.modern-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 1200px;
+
+    }
+
+    .provider-inner {
+        width: 100%;
+        overflow-x: auto;
+
+    }
+
     .hero-content h1 {
         font-size: 50px;
         line-height: 60px;

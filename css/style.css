@@ -1658,18 +1658,7 @@ footer h3 {
     transform: translateX(3px);
 }
 
-table.modern-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 1200px;
 
-}
-
-.provider-inner {
-    width: 100%;
-    overflow-x: auto;
-
-}
 
 .what-we-do-image img {
     width: 100%;
@@ -1677,4 +1666,350 @@ table.modern-table {
 
 .social-links ul {
     flex-wrap: wrap;
+}
+
+.top-list-wrap {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.25rem;
+    border-radius: 8px;
+
+    background-color: #0c1317;
+    margin: 1.25rem 0;
+}
+
+.inner-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toplist-left {
+    width: 47%;
+}
+
+.tp-logo.logo_libravet {
+    background: #000;
+}
+
+.tp-logo {
+    height: 5rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.tp-logo a {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.rating-wrap p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.rating-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.rating-txt p span,
+.votes-txt p span {
+    display: block;
+    font-weight: 700;
+}
+
+.tp-bottom-text-wrapper p {
+    color: #000;
+    font-size: 1rem;
+}
+
+.tp-bottom-text-wrapper ul li {
+    margin-bottom: 1rem;
+}
+
+.toplist-right {
+    width: 50%;
+}
+
+.toplist-heading {
+    text-align: center;
+}
+
+.toplist-heading h4 {
+    font-size: 22px;
+    line-height: 1.1;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.625rem;
+    font-weight: 800;
+}
+
+.toplist-heading p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    max-width: 11.25rem;
+    margin: 0 auto;
+}
+
+.top-list-btn {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.tp-cards-section {
+    padding: 1.875rem 0;
+}
+
+.tp-cards {
+    background-color: #000000;
+    padding: 1.25rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.tp-banner {
+    position: relative;
+    height: 18rem;
+    background-position: center;
+    background-size: contain;
+    padding: 5.625rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.tp-banner:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0 0 0/70%);
+    background-blend-mode: multiply;
+}
+
+.tp-banner-text-group h2 {
+    color: #fff;
+    text-align: center;
+    padding: 0 0.9375rem;
+    font-size: 1.875rem;
+    margin: 0 auto;
+    max-width: 21.875rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.tp-banner-text {
+    z-index: 1111;
+    position: relative;
+}
+
+.casino-section h2 {
+    color: #fff;
+    text-align: center;
+    padding: 1.875rem 0;
+    font-size: 1.875rem;
+}
+
+.rating-txt p span,
+.votes-txt p span {
+    font-size: 0.9375rem;
+}
+
+.top-list-btn .shopbtn {
+    padding: 12px 34px;
+}
+
+.top-list-btn .btn {
+    background: transparent;
+    border-color: #ff8e8c;
+    color: #ff8e8c;
+
+}
+
+.Stars {
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    position: relative;
+    display: inline-block;
+}
+
+.Stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #fc0 var(--percent), #ccc var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+}
+
+
+.disclaimer {
+    display: none;
+}
+
+.tp-logo {
+    max-width: 250px;
+}
+
+.top-list-wrap {
+    padding: 20px 40px;
+}
+
+.top-list-wrap {
+    padding: 20px;
+}
+
+
+/* media query 575 */
+@media(max-width:575px) {
+
+    .desktop-version,
+    .faqs {
+        display: none;
+    }
+
+    /* change #newcookies css above while doing tp changes */
+
+
+    .mobile-view {
+        display: block;
+    }
+
+
+
+}
+
+/* media query 525 */
+@media(max-width:525px) {
+    .toplist-heading h4 {
+        font-size: 18px;
+    }
+
+    .rating-txt p span,
+    .votes-txt p span {
+        font-size: 14px;
+    }
+
+    .top-list-btn {
+        margin-top: 24px;
+    }
+
+    .gamb-logos ul li .btn-logos {
+        width: 8.375rem;
+    }
+
+}
+
+/* media query 480 */
+
+@media(max-width:480px) {
+
+    .rating-txt p span,
+    .votes-txt p span {
+        font-size: 12px;
+    }
+
+    .top-list-btn .shopbtn {
+        line-height: normal;
+        padding: 8px 24px;
+    }
+
+    .visit-btn {
+        padding: 12px 20px;
+    }
+
+    .Stars {
+        font-size: 18px;
+    }
+
+    .gamb-logos ul li .btn-logos {
+        width: 6.375rem;
+    }
+
+    .tp-butn {
+        padding: 0.9375rem 1.875rem 1.125rem;
+    }
+
+    .rating-wrap p {
+        font-size: 1rem;
+
+    }
+}
+
+/* media query 400 */
+@media(max-width:400px) {
+    .tp-banner-text-group h2 {
+        font-size: 24px;
+    }
+
+    .casino-section h2 {
+        font-size: 25px;
+    }
+
+    .toplist-heading p {
+        font-size: 14px;
+    }
+
+    .toplist-heading h4 {
+        font-size: 16px;
+    }
+
+    .tp-butn {
+        padding: 0.875rem;
+    }
+
+    .rating-wrap p {
+        font-size: 0.9rem;
+    }
+
+    .tp-bottom-text-wrapper h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* media query 350 */
+@media(max-width:350px) {
+    .top-list-wrap {
+        padding: 15px;
+    }
+
+    .tp-logo {
+        height: 70px;
+    }
+
+    .toplist-heading h4 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .top-list-btn .shopbtn {
+        padding: 6px 18px;
+    }
+}
+
+.tp-banner-text-group p {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
 }
