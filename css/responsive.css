@@ -21,6 +21,11 @@
         display: none;
     }
 
+    .hero-content h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
     .hand-wallet {
         display: none;
     }
