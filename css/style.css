@@ -1674,7 +1674,7 @@ footer h3 {
     padding: 1.25rem;
     border-radius: 8px;
 
-    background-color: #0c1317;
+    background-color: #004d4d;
     margin: 1.25rem 0;
 }
 
@@ -1692,23 +1692,20 @@ footer h3 {
 }
 
 .tp-logo {
-    height: 5rem;
+
     width: 100%;
     background-color: #ffffff;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
     padding: 10px;
+    height: 5rem;
 }
 
-.tp-logo a {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
+.tp-logo img {
     width: 100%;
-    display: inline-block;
-    overflow: hidden;
+    height: 100%;
+    object-fit: contain;
 }
 
 .rating-wrap p {
@@ -1748,20 +1745,29 @@ footer h3 {
     text-align: center;
 }
 
-.toplist-heading h4 {
-    font-size: 22px;
-    line-height: 1.1;
-    text-align: center;
+
+.toplist-heading a {
     color: #fff;
-    margin-bottom: 0.625rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.toplist-heading a:hover {
+    color: #ffce32;
+}
+
+.rating-txt i {
+    color: #ffce32;
+    font-size: 14px;
 }
 
 .toplist-heading p {
-    font-size: 1.1rem;
+    font-size: 15px !important;
     text-align: center;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
     max-width: 11.25rem;
     margin: 0 auto;
 }
@@ -1843,8 +1849,9 @@ footer h3 {
 
 .top-list-btn .btn {
     background: transparent;
-    border-color: #ff8e8c;
-    color: #ff8e8c;
+    border-color: #ffce32;
+    color: #ffce32;
+    display: block;
 
 }
 
@@ -1903,9 +1910,7 @@ footer h3 {
 
 /* media query 525 */
 @media(max-width:525px) {
-    .toplist-heading h4 {
-        font-size: 18px;
-    }
+
 
     .rating-txt p span,
     .votes-txt p span {
@@ -1972,9 +1977,6 @@ footer h3 {
         font-size: 14px;
     }
 
-    .toplist-heading h4 {
-        font-size: 16px;
-    }
 
     .tp-butn {
         padding: 0.875rem;
@@ -1999,10 +2001,7 @@ footer h3 {
         height: 70px;
     }
 
-    .toplist-heading h4 {
-        font-size: 16px;
-        font-weight: 700;
-    }
+
 
     .top-list-btn .shopbtn {
         padding: 6px 18px;
@@ -2013,4 +2012,16 @@ footer h3 {
     text-align: center;
     color: #fff;
     margin-top: 10px;
+}
+
+.toplist-heading h6 {
+    color: #fff;
+}
+
+.home-table-mobile-card {
+    display: none;
+    padding: 20px 0 40px 0;
+}
+.rbc-logo{
+    background-color: #0050a5;
 }

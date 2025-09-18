@@ -75,7 +75,7 @@
         margin-bottom: 20px;
     }
 
- 
+
 
     .card-content h4 {
         font-size: 1.2rem;
@@ -326,7 +326,15 @@
 }
 
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+    .home-table-mobile-card {
+        display: block;
+    }
+
+    .provider {
+        display: none;
+    }
+}
 
 
 @media (max-width: 480px) {
