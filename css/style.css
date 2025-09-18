@@ -490,7 +490,7 @@ span.menu-close {
     font-weight: 600;
     letter-spacing: 0.5px;
     padding: 20px 15px;
-    text-align: left;
+    text-align: center;
     border: none;
     position: relative;
 }
@@ -532,6 +532,7 @@ span.menu-close {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
+    text-align: center;
 }
 
 /* Provider Cell Styling */
@@ -539,19 +540,17 @@ span.menu-close {
     min-width: 200px;
 }
 
-.provider-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
+
 
 .provider-logo {
-    width: 70px;
-    height: 30px;
+    width: 130px;
+    height: 70px;
     object-fit: contain;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    background: #fff;
+    padding: 7px;
 }
 
 .provider-logo:hover {
