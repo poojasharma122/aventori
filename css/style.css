@@ -64,6 +64,7 @@ header.is-sticky {
 .logo img {
     max-width: 150px;
 }
+
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -631,6 +632,11 @@ span.menu-close {
     box-shadow: 0 8px 25px rgba(255, 206, 50, 0.3);
 }
 
+.footer-logo img {
+    margin-bottom: 30px;
+    width: 150px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .provider-inner {
@@ -658,7 +664,7 @@ span.menu-close {
         text-align: center;
     }
 
-   
+
 
     .provider-name {
         font-size: 14px;
@@ -1068,7 +1074,7 @@ textarea#message {
     -o-transition: all .5s ease;
     outline: none;
     box-shadow: none;
-    border-radius: 12px ;
+    border-radius: 12px;
 }
 
 
