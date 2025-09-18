@@ -484,11 +484,11 @@ span.menu-close {
 }
 
 .modern-table thead {
-    background: linear-gradient(135deg, #005655 0%, #006666 100%);
+    background: #fbbf24;
 }
 
 .modern-table thead th {
-    color: #fff;
+    color: #000;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -916,6 +916,7 @@ span.menu-close {
 .inner-content h2 {
     color: #fff;
     text-align: center;
+    font-size: 40px;
 }
 
 .last-update {
