@@ -44,7 +44,7 @@
     }
 
     .hero-banner__thumb-img {
-        max-width: 400px;
+        max-width: 350px;
         padding-top: 0;
         padding-left: 0;
     }
@@ -111,7 +111,7 @@
     }
 
     .provider-inner {
-        margin-top: -40px;
+        margin-top: -70px;
         border-radius: 15px;
     }
 
