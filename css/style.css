@@ -415,7 +415,7 @@ span.menu-close {
 }
 
 .hero-banner__thumb-img {
-    max-width: 500px;
+    max-width: 400px;
     padding-top: 100px;
     padding-left: 50px;
 }
@@ -467,7 +467,6 @@ span.menu-close {
     margin-top: -80px;
     z-index: 11;
     position: relative;
-    background: #fff;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 86, 85, 0.1);
     overflow: hidden;
